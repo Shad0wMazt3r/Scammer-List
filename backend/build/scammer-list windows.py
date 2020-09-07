@@ -223,4 +223,14 @@ try:
 	spam_checker(spam_text_stripped)
 except:
 	print("Spam text not given")
+reportScammer = input("Do you want to report this name and text?(y/n)")
+reportScammer = reportScammer.lower()
+if reportScammer == "y":
+	print("Please wait for a few seconds")
+	time.sleep(3)
+	mail = "https://wa.me/+919996709561/?text=Scammer Name:"
+	mail = mail + name + " message:"
+	mail = mail + spam_whatsapp
+	webbrowser.open_new_tab(mail)
+	print(f"If you are not able to send, please manually send a whatsapp message to +91 9996709561 with the text Scammer Name:{name} message: {spam_whatsapp}")
 time.sleep(10)
