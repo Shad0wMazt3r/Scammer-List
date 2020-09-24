@@ -10,7 +10,7 @@ export class MainService {
     ) { }
 
   getResult(name, message){
-    return this.http.get(`http://54.162.146.101/?name=${name}&message=${message}`, {
+    return this.http.get(`api.php/?name=${name}&message=${message}`, {
       headers: new HttpHeaders({
         'Accept': 'text/html'
         // 'Content-Type': 'application/json

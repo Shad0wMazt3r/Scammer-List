@@ -20,7 +20,6 @@ export class MainComponent implements OnInit {
     }
     const writer = new Typewriter(target, options)
     writer.type(' Connecting to server......').rest(5000).removeCursor().start();
-
     this.fetchResult()
   }
 
