@@ -16,7 +16,12 @@
 
 <main class="columns is-two-thirds-tablet">
     <div class="form column">
-        
+        <form [formGroup]="form">
+            <input formControlName="name" class="input is-medium" type="text" placeholder="Name">
+            <textarea formControlName="message" class="textarea" placeholder="message"></textarea>
+            <br>
+            <button (click)="fetchResult()" class="button is-dark is-medium">Submit</button>
+        </form>
     </div>
     <div class="result ubuntu column">
         <strong>> Fill in the form to see the output here</strong>

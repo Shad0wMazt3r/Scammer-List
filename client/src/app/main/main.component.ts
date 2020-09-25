@@ -37,15 +37,15 @@ form: FormGroup;
   }
 
   get name() {
-    return this.form.get('name')
+    return this.form.get('name').value
   }
 
   get message() {
-    return this.form.get('message')
+    return this.form.get('message').value
   }
 
   fetchResult() {
-    return this.service.getResult('mike', 'call me now').subscribe(next => {
+    return this.service.getResult(this.name, this.message).subscribe(next => {
       console.log(next)
     })
   }

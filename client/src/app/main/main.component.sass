@@ -1,3 +1,4 @@
+@import "./placeholder.scss"
 main
     color: white !important
     text-align: center
@@ -16,7 +17,18 @@ main
             font-size: 1.2em
             color: white    
     .form
-        
+        padding: 1em
+        input
+            background: #111111
+            color: white !important
+            @include placeholder-color(white)
+
+        textarea
+            background: #111111
+            margin-top: 1.5em
+            color: white !important
+            @include placeholder-color(white)
+
 section
     widh: 100%
     margin: 0 !important
