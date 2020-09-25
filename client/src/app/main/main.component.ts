@@ -3,7 +3,6 @@ import Typewriter from 't-writer.js';
 import { MainService } from '../services/main.service';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ServerResponse } from './response';
-import { write } from 'fs';
 
 @Component({
   selector: 'app-header',
@@ -56,17 +55,27 @@ export class MainComponent implements OnInit {
       writer.type('> Connecting....').rest(1000).removeCursor().start();
       return this.service.getResult(this.name, this.message).subscribe(next => {
         this.response = next
-        setTimeout(() => {this.setResponse(this.response)}, 500)
         writer.clear()
         writer.type('> Connected to server').rest(4000).start()
         writer.clear()
+        setTimeout(() => {this.setResponse(this.response)}, 500)
       })
     }
   }
 
   setResponse(response: ServerResponse) {
-    // check name and message conditionally
-    return null
+    const score: number = +response.Score
+    if(response.Scammer === false){
+      this.nameText = `> The name "${response.Name}" is not in our scam/spam database`
+    } else {
+      this.nameText = `> "${response.Name}" is a scammer/spammer !`
+    }
+
+    if(score <= 3) {
+      this.messageText = `> The message provided dosent look like spam`
+    } else {
+      this.messageText = `> The message looks like a spam/scam message !`
+    }
   }
 
 }
