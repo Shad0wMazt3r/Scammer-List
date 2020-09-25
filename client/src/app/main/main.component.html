@@ -16,11 +16,11 @@
 
 <main class="columns is-two-thirds-tablet">
     <div class="form column">
-        <form [formGroup]="form">
-            <input formControlName="name" class="input is-medium" type="text" placeholder="Name">
-            <textarea formControlName="message" class="textarea" placeholder="message"></textarea>
+        <form [formGroup]="form" (ngSubmit)="fetchResult()">
+            <input formControlName="name" class="input is-medium" type="text" placeholder="Name" required>
+            <textarea formControlName="message" class="textarea" placeholder="message" required></textarea>
             <br>
-            <button (click)="fetchResult()" class="button is-dark is-medium">Submit</button>
+            <button type="submit" class="button is-dark is-medium">Submit</button>
         </form>
     </div>
     <div class="result ubuntu column">

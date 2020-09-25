@@ -18,10 +18,12 @@ form: FormGroup;
 
     this.form = this.formBuilder.group({
       name: ['', [
-        Validators.required
+        Validators.required,
+        Validators.minLength(2)
       ]],
       message: ['', [
-        Validators.required
+        Validators.required,
+        Validators.minLength(2)
       ]]
     })
 
@@ -32,8 +34,7 @@ form: FormGroup;
       typeSpeed: 47,
     }
     const writer = new Typewriter(target, options)
-    writer.type(' Connecting to server......').rest(5000).removeCursor().start();
-    this.fetchResult()
+    writer.type(' Connecting to server......').rest(3000).removeCursor().start();
   }
 
   get name() {
@@ -45,9 +46,13 @@ form: FormGroup;
   }
 
   fetchResult() {
-    return this.service.getResult(this.name, this.message).subscribe(next => {
-      console.log(next)
-    })
+    if(this.form.get('name').errors || this.form.get('message').errors) {
+      alert("Please check your input")
+    } else {
+      return this.service.getResult(this.name, this.message).subscribe(next => {
+        console.log(next)
+      })
+    }
   }
 
 }
