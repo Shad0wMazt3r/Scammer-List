@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import Typewriter from 't-writer.js';
 import { MainService } from '../services/main.service';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { ServerResponse } from './response';
+import { write } from 'fs';
 
 @Component({
   selector: 'app-header',
@@ -10,9 +12,14 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 })
 export class MainComponent implements OnInit {
 
-form: FormGroup;
+  form: FormGroup;
+  response: ServerResponse;
 
-  constructor(private service: MainService, private formBuilder: FormBuilder) { }
+  nameText: string;
+  messageText: string;
+
+  constructor(private service: MainService, private formBuilder: FormBuilder) {
+  }
 
   ngOnInit(): void {
 
@@ -26,15 +33,6 @@ form: FormGroup;
         Validators.minLength(2)
       ]]
     })
-
-    const target = document.getElementById('loading')
-    const options = {
-      loop: true,
-      typeColor: '#40f029',
-      typeSpeed: 47,
-    }
-    const writer = new Typewriter(target, options)
-    writer.type(' Connecting to server......').rest(3000).removeCursor().start();
   }
 
   get name() {
@@ -46,13 +44,29 @@ form: FormGroup;
   }
 
   fetchResult() {
-    if(this.form.get('name').errors || this.form.get('message').errors) {
+    if (this.form.get('name').errors || this.form.get('message').errors) {
       alert("Please check your input")
     } else {
+      const target = document.getElementById('loading')
+      const options = {
+        typeColor: '#40f029',
+        typeSpeed: 47,
+      }
+      const writer = new Typewriter(target, options)
+      writer.type('> Connecting....').rest(1000).removeCursor().start();
       return this.service.getResult(this.name, this.message).subscribe(next => {
-        console.log(next)
+        this.response = next
+        setTimeout(() => {this.setResponse(this.response)}, 500)
+        writer.clear()
+        writer.type('> Connected to server').rest(4000).start()
+        writer.clear()
       })
     }
+  }
+
+  setResponse(response: ServerResponse) {
+    // check name and message conditionally
+    return null
   }
 
 }
