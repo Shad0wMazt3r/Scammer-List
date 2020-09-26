@@ -71,8 +71,8 @@ export class MainComponent implements OnInit {
       this.nameText = `> "${response.Name}" is a scammer/spammer !`
     }
 
-    if(score <= 3) {
-      this.messageText = `> The message provided dosent look like spam`
+    if(score <= 5) {
+      this.messageText = `> The message provided dosen't look like spam`
     } else {
       this.messageText = `> The message looks like a spam/scam message !`
     }
