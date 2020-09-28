@@ -1,4 +1,6 @@
 <?php
+header("Access-Control-Allow-Origin: *");
+header('Content-Type: application/json');
 $name = $_GET['name'];
 $message = $_GET['message'];
 $name = str_replace("<","", $name);
