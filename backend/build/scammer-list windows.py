@@ -1,3 +1,5 @@
+# Author: Pratyaksha Beri
+# Version: 1.0
 from requests import get
 import time
 website = "https://raw.githubusercontent.com/Shad0wMazt3r/Scammer-List/master/scammer-list.md"
