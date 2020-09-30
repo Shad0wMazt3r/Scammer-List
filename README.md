@@ -25,7 +25,7 @@
 1. A database of the names of the top scammers, bitcoin addressed, websites and their ratings have been made, so as to list infamous scammers based on past records and possible dangers arising
 2. Next, a machine learning algorithm has been set up which takes in the user’s input of the suspected scammer, which involves the name of the suspect and some messages involving the threat suspicion
 3. Then the algorithm determines rating and past records and identifies potential spam and scam
-4. This way, our algorithm checks and returns back a response. This idea is based on the serious need of people to check whether some online user is a scammer or not, and whether or not s/he should trust him/her.
+4. This way, our algorithm checks and returns back a response. This idea is based on the serious need of people to check whether some online user is a scammer or not, and whether or not s/he should trust him/her.<br>
 Note: All the links are at https://linktr.ee/scammerlist including Source Code; API; Downloadable executables
 
 ##### PHP API at [PHP API](http://54.162.146.101/api.php)<br>
