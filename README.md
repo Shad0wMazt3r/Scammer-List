@@ -13,7 +13,7 @@
 4. You will be able to see the result on the Right side<br>
 ##### Click below image to see a video tutorial 👇🏼
 [![Example Video](https://i.ibb.co/gMRYQ2M/Scammer-List-Web-App.png)](https://raw.githubusercontent.com/Shad0wMazt3r/Scammer-List/Screenshots/Web%20App.webm)<br>
-**Made with Python, PHP, Typescript and ❤️ in India.**<br>
-**PHP API at [PHP API](http://54.162.146.101/api.php)**<br>
-[Documentation of the API](https://github.com/Shad0wMazt3r/Scammer-List/blob/master/API/Documentation.md)
-
+##### PHP API at [PHP API](http://54.162.146.101/api.php)<br>
+[Documentation of the API](https://github.com/Shad0wMazt3r/Scammer-List/blob/master/API/Documentation.md)<br>
+<hr>
+<b>Made with Python ,PHP, Typescript and ❤️ in India.</b><br>
