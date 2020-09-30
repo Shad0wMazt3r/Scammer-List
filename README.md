@@ -13,7 +13,6 @@
 4. You will be able to see the result on the Right side<br>
 ##### Click below image to see a video tutorial 👇🏼
 [![Example Video](https://i.ibb.co/gMRYQ2M/Scammer-List-Web-App.png)](https://raw.githubusercontent.com/Shad0wMazt3r/Scammer-List/Screenshots/Web%20App.webm)<br>
-<hr>
 ## How to use the Desktop App 👨🏻‍💻
 1. Download the executable. [Click Here!](https://github.com/Shad0wMazt3r/Scammer-List/releases/download/v1.0/scammer-list.exe)<br>
 2. Open the App & Enter the name. Press `Enter`<br>
@@ -21,8 +20,7 @@
 4. You will be able to See the result<br>
 5. Enter `y` to Report spam or Enter `n` to skip reporting<br>
 ##### Click below image to see a video tutorial 👇🏼
-[![Example Video](https://i.ibb.co/YLXwSqd/Desktop-App.png)(https://raw.githubusercontent.com/Shad0wMazt3r/Scammer-List/Screenshots/Desktop%20App.webm)<br>
-<hr>
+<a href="https://raw.githubusercontent.com/Shad0wMazt3r/Scammer-List/Screenshots/Desktop%20App.webm">![Example Video](https://i.ibb.co/YLXwSqd/Desktop-App.png)</a><br>
 ##### PHP API at [PHP API](http://54.162.146.101/api.php)<br>
 [Documentation of the API](https://github.com/Shad0wMazt3r/Scammer-List/blob/master/API/Documentation.md)<br>
 <hr>
