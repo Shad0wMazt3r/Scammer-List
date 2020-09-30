@@ -21,6 +21,11 @@
 5. Enter `y` to Report spam or Enter `n` to skip reporting<br>
 ##### Click below image to see a video tutorial 👇🏼
 <a href="https://raw.githubusercontent.com/Shad0wMazt3r/Scammer-List/Screenshots/Desktop%20App.webm">![Example Video](https://i.ibb.co/YLXwSqd/Desktop-App.png)</a><br>
+# 🚀 Features 🚀  
+1.
+2.
+3.
+4.
 ##### PHP API at [PHP API](http://54.162.146.101/api.php)<br>
 [Documentation of the API](https://github.com/Shad0wMazt3r/Scammer-List/blob/master/API/Documentation.md)<br>
 <hr>
