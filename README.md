@@ -4,7 +4,7 @@
 ⚡ Visit the Web App on [Scammer List](https://scammerlist.now.sh) <br>
 🚀 To download the executable file click <a href="https://github.com/Shad0wMazt3r/Scammer-List/blob/master/scammer-list.exe?raw=true">here</a>
 
-🌟 *Contributors: **[Shad0wMazt3r(Pratyaksha Beri)](https://github.com/Shad0wMazt3r), [ujjwal-kr](https://github.com/ujjwal-kr)*** <br>
+### 🌟 *Authors: **[Shad0wMazt3r(Pratyaksha Beri)](https://github.com/Shad0wMazt3r), [ujjwal-kr](https://github.com/ujjwal-kr)*** <br>
 
 ## How to use the Web App 👨🏻‍💻
 1. Go to the [website](https://scammerlist.now.sh)<br>
