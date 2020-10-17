@@ -5,7 +5,7 @@
 The API interacts with Python Program to fetch the Scam Score and checks the name in the Database. <br>
 You need to make a GET request at [Scammer List API](http://54.162.146.101/api.php) with the parameters `name` and `message`<br>
 Example:
-Making a Get request with parameters `name=David Mavah` & `message=this is not a scam message`, We can form the following URL:http://54.162.146.101/api.php?name=David%20Mavah&message=This%20isnt%20a%20scam%20message
+Making a Get request with parameters `name=David Mavah` & `message=this is not a scam message`, We can form the following URL:https://scammerlist.herokuapp.com/api.php/api.php?name=David%20Mavah&message=This%20isnt%20a%20scam%20message
 
 Here is the expected result:
 
